@@ -1,0 +1,65 @@
+{
+  "_from": "git+https://github.com/wuxudong/react-native-charts-wrapper.git",
+  "_id": "react-native-charts-wrapper@0.5.7",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-charts-wrapper",
+  "_phantomChildren": {
+    "loose-envify": "1.4.0",
+    "object-assign": "4.1.1",
+    "prop-types": "15.7.2"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "react-native-charts-wrapper@git+https://github.com/wuxudong/react-native-charts-wrapper.git",
+    "name": "react-native-charts-wrapper",
+    "escapedName": "react-native-charts-wrapper",
+    "rawSpec": "git+https://github.com/wuxudong/react-native-charts-wrapper.git",
+    "saveSpec": "git+https://github.com/wuxudong/react-native-charts-wrapper.git",
+    "fetchSpec": "https://github.com/wuxudong/react-native-charts-wrapper.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/wuxudong/react-native-charts-wrapper.git#20ceaf73472b91166dbb4e2221799e4f5bc7a1b5",
+  "_spec": "react-native-charts-wrapper@git+https://github.com/wuxudong/react-native-charts-wrapper.git",
+  "_where": "/Users/artemsokolenko/Desktop/rn_crypto_wallet",
+  "author": {
+    "name": "wuxudong"
+  },
+  "bugs": {
+    "url": "https://github.com/wuxudong/react-native-charts-wrapper/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "16.8.3"
+  },
+  "deprecated": false,
+  "description": "A react-native charts support both android and iOS.",
+  "files": [
+    "android",
+    "ios",
+    "lib",
+    "index.js",
+    "RNCharts.podspec"
+  ],
+  "homepage": "https://github.com/wuxudong/react-native-charts-wrapper",
+  "keywords": [
+    "react native",
+    "chart",
+    "android",
+    "MPAndroidChart",
+    "ios",
+    "Charts"
+  ],
+  "license": "MIT",
+  "name": "react-native-charts-wrapper",
+  "nativePackage": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuxudong/react-native-charts-wrapper.git"
+  },
+  "version": "0.5.7"
+}
