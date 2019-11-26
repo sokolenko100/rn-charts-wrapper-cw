@@ -1,5 +1,5 @@
 {
-  "_from": "git+https://github.com/wuxudong/react-native-charts-wrapper.git",
+  "_from": "git+https://github.com/sokolenko100/rn-charts-wrapper-cw.git",
   "_id": "react-native-charts-wrapper@0.5.7",
   "_inBundle": false,
   "_integrity": "",
@@ -11,20 +11,20 @@
   },
   "_requested": {
     "type": "git",
-    "raw": "react-native-charts-wrapper@git+https://github.com/wuxudong/react-native-charts-wrapper.git",
+    "raw": "react-native-charts-wrapper@git+https://github.com/sokolenko100/rn-charts-wrapper-cw.git",
     "name": "react-native-charts-wrapper",
     "escapedName": "react-native-charts-wrapper",
-    "rawSpec": "git+https://github.com/wuxudong/react-native-charts-wrapper.git",
-    "saveSpec": "git+https://github.com/wuxudong/react-native-charts-wrapper.git",
-    "fetchSpec": "https://github.com/wuxudong/react-native-charts-wrapper.git",
+    "rawSpec": "git+https://github.com/sokolenko100/rn-charts-wrapper-cw.git",
+    "saveSpec": "git+https://github.com/sokolenko100/rn-charts-wrapper-cw.git",
+    "fetchSpec": "https://github.com/sokolenko100/rn-charts-wrapper-cw.git",
     "gitCommittish": null
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git+https://github.com/wuxudong/react-native-charts-wrapper.git#20ceaf73472b91166dbb4e2221799e4f5bc7a1b5",
-  "_spec": "react-native-charts-wrapper@git+https://github.com/wuxudong/react-native-charts-wrapper.git",
-  "_where": "/Users/artemsokolenko/Desktop/rn_crypto_wallet",
+  "_resolved": "git+https://github.com/sokolenko100/rn-charts-wrapper-cw.git#20b0f1918267a636a9730b53db9563f26900402c",
+  "_spec": "react-native-charts-wrapper@git+https://github.com/sokolenko100/rn-charts-wrapper-cw.git",
+  "_where": "C:\\study\\rn_crypto_wallet",
   "author": {
     "name": "wuxudong"
   },

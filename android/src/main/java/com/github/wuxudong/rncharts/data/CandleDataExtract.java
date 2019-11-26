@@ -86,20 +86,20 @@ public class CandleDataExtract extends DataExtract<CandleData, CandleEntry> {
             x = (float) map.getDouble("x");
         }
 
-        if (
-                !BridgeUtils.validate(map, ReadableType.Number, "shadowH") ||
-                        !BridgeUtils.validate(map, ReadableType.Number, "shadowL") ||
-                        !BridgeUtils.validate(map, ReadableType.Number, "open") ||
-                        !BridgeUtils.validate(map, ReadableType.Number, "close")) {
-            throw new IllegalArgumentException("CandleStick data must contain: shadowH, shadowL, open and close values");
+        if (!BridgeUtils.validate(map, ReadableType.Number, "H")
+                || !BridgeUtils.validate(map, ReadableType.Number, "L")
+                || !BridgeUtils.validate(map, ReadableType.Number, "O")
+                || !BridgeUtils.validate(map, ReadableType.Number, "C")) {
+            throw new IllegalArgumentException(
+                    "CandleStick data must contain: H, L, O and C values");
         }
 
-        float shadowH = (float) map.getDouble("shadowH");
-        float shadowL = (float) map.getDouble("shadowL");
-        float open = (float) map.getDouble("open");
-        float close = (float) map.getDouble("close");
+        float H = (float) map.getDouble("H");
+        float L = (float) map.getDouble("L");
+        float O = (float) map.getDouble("O");
+        float C = (float) map.getDouble("C");
 
-        CandleEntry candleEntry = new CandleEntry(x, shadowH, shadowL, open, close, ConversionUtil.toMap(map));
+        CandleEntry candleEntry = new CandleEntry(x, H, L, O, C, ConversionUtil.toMap(map));
 
         return candleEntry;
     }
