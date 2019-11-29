@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.dependency 'Charts'
 
   s.subspec 'Charts' do |ss|
-    ss.source_files    = " https://github.com/sokolenko100/chart_for_ios.git" 
+    ss.source_files         = '../../ios/Charts/**/*.{h,m}'
 end
 
 end
