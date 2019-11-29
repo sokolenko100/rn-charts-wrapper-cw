@@ -1,7 +1,6 @@
 //  Created by xudong wu on 02/03/2017.
 //  Copyright © 2017 wuxudong. All rights reserved.
 //
-
 import Foundation
 import SwiftyJSON
 import Charts
@@ -12,7 +11,7 @@ class CandleDataExtract : DataExtract {
     }
     
     override func createDataSet(_ entries: [ChartDataEntry]?, label: String?) -> IChartDataSet {
-        return CandleChartDataSet(entries: entries, label: label)
+        return CandleChartDataSet(values: entries, label: label)
     }
     
     override func dataSetConfig(_ dataSet: IChartDataSet, config: JSON) {
@@ -85,16 +84,16 @@ class CandleDataExtract : DataExtract {
             x = Double(value["x"].doubleValue);
         }
         
-        if value["shadowH"].double == nil || value["shadowL"].double == nil || value["open"].number == nil || value["close"].number == nil  {
+        if value["H"].double == nil || value["L"].double == nil || value["O"].number == nil || value["C"].number == nil  {
             fatalError("invalid data " + values.description);
         }
         
         
         entry = CandleChartDataEntry(x: x,
-                                     shadowH: value["shadowH"].doubleValue,
-                                     shadowL: value["shadowL"].doubleValue,
-                                     open: value["open"].doubleValue,
-                                     close: value["close"].doubleValue,
+                                     shadowH: value["H"].doubleValue,
+                                     shadowL: value["L"].doubleValue,
+                                     open: value["O"].doubleValue,
+                                     close: value["C"].doubleValue,
                                      data: value as AnyObject?)
         
         return entry;
