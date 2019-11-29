@@ -85,16 +85,16 @@ class CandleDataExtract : DataExtract {
             x = Double(value["x"].doubleValue);
         }
         
-        if value["shadowH"].double == nil || value["shadowL"].double == nil || value["open"].number == nil || value["close"].number == nil  {
+        if value["H"].double == nil || value["L"].double == nil || value["O"].number == nil || value["C"].number == nil  {
             fatalError("invalid data " + values.description);
         }
         
         
         entry = CandleChartDataEntry(x: x,
-                                     shadowH: value["shadowH"].doubleValue,
-                                     shadowL: value["shadowL"].doubleValue,
-                                     open: value["open"].doubleValue,
-                                     close: value["close"].doubleValue,
+                                     shadowH: value["H"].doubleValue,
+                                     shadowL: value["L"].doubleValue,
+                                     open: value["O"].doubleValue,
+                                     close: value["C"].doubleValue,
                                      data: value as AnyObject?)
         
         return entry;
