@@ -163,7 +163,7 @@ public class ChartDataSetConfigUtils {
                     orientation,
                     colors);
             gd.setCornerRadius(0f);
-            gd.setAlpha(config.getInt("fillAlpha"));
+            //gd.setAlpha(config.getInt("fillAlpha"));
             dataSet.setFillDrawable(gd);
         } else if (BridgeUtils.validate(config, ReadableType.Number, "fillColor")) {
             dataSet.setFillColor(config.getInt("fillColor"));
